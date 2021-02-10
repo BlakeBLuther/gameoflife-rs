@@ -1,8 +1,5 @@
 // Conway's Game of Life, implemented in Rust.
 
-// weird edge case: trying to -1 from a usize of 0 causes a panic.
-// Solution: Bound all possible coords between [1, BOARD_WIDTH/HEIGHT-1] inclusive.
-
 use std::{fmt, thread::sleep, time, write};
 
 use rand::distributions::{Bernoulli, Distribution};
